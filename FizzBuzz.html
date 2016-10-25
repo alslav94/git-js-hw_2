@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>FizzBuzz</title>
     <script>
-      "use strict"
+      "use strict";
 
-      var numArray = [];
+      var numArray = []; //Обявляем массив
       var i = "1";
 
-      while (i != 101) {
-       numArray.push(i++)
+      while (i != 101) { //Дословно: "Пока i не равно 101 делать следующее: добавить элемент, равный i, в массив и прибавить"
+       numArray.push(i++); //единицу к i. Соотвественно, когда i будет равно 101, цикл закончится.
      }
-     for (i = 0; i != 101; i++) {
-//        if (Number.isInteger(numArray[i]/3)) {
-//            alert(numArray[i] + " - да это же Fizz!");
+     for (i = 0; i != 101; i++) {                        //Дословно: "Сначала i равно 0; условие: i не равно 101; после цикла добавить единицу"
+//        if (Number.isInteger(numArray[i]/3)) {         //Дословно: если элемент в массиве, чей индекс равен i и который поделен на 3 является
+//            alert(numArray[i] + " - да это же Fizz!"); //целым числом, то выведи на экран это число и прибавь к нему строку.
 //        }
-//         if (Number.isInteger(numArray[i]/5)) {
+//         if (Number.isInteger(numArray[i]/5)) { //То же самое, но с делением на 5.
 //         alert(numArray[i] + " - да это же Buzz!");
 //     }
-         if (Number.isInteger(numArray[i]/3) & Number.isInteger(numArray[i]/5)) {
+         if (Number.isInteger(numArray[i]/3) && Number.isInteger(numArray[i]/5)) { //Теперь то же самое, но уже с обоими условиями.
              alert(numArray[i] + " - да это же FizzBuzz!");
          }
       }
