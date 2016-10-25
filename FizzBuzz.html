@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script>
+      "use strict"
+
+      var numArray = [];
+      var i = "1";
+
+      while (i != 101) {
+       numArray.push(i++)
+     }
+     for (i = 0; i != 101; i++) {
+//        if (Number.isInteger(numArray[i]/3)) {
+//            alert(numArray[i] + " - да это же Fizz!");
+//        }
+//         if (Number.isInteger(numArray[i]/5)) {
+//         alert(numArray[i] + " - да это же Buzz!");
+//     }
+         if (Number.isInteger(numArray[i]/3) & Number.isInteger(numArray[i]/5)) {
+             alert(numArray[i] + " - да это же FizzBuzz!");
+         }
+      }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
